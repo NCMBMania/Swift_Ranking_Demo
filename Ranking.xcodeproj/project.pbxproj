@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		C73FA91026BE79F50044F59A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FA90F26BE79F50044F59A /* ContentView.swift */; };
 		C73FA91226BE79F60044F59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73FA91126BE79F60044F59A /* Assets.xcassets */; };
 		C73FA91526BE79F60044F59A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73FA91426BE79F60044F59A /* Preview Assets.xcassets */; };
+		C73FA91E26BE7A090044F59A /* NCMB in Frameworks */ = {isa = PBXBuildFile; productRef = C73FA91D26BE7A090044F59A /* NCMB */; };
+		C73FA92026BE82780044F59A /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FA91F26BE82780044F59A /* RankingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		C73FA91126BE79F60044F59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73FA91426BE79F60044F59A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C73FA91626BE79F60044F59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73FA91F26BE82780044F59A /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73FA91E26BE7A090044F59A /* NCMB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 				C73FA91126BE79F60044F59A /* Assets.xcassets */,
 				C73FA91626BE79F60044F59A /* Info.plist */,
 				C73FA91326BE79F60044F59A /* Preview Content */,
+				C73FA91F26BE82780044F59A /* RankingView.swift */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = Ranking;
+			packageProductDependencies = (
+				C73FA91D26BE7A090044F59A /* NCMB */,
+			);
 			productName = Ranking;
 			productReference = C73FA90A26BE79F50044F59A /* Ranking.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,9 @@
 				Base,
 			);
 			mainGroup = C73FA90126BE79F50044F59A;
+			packageReferences = (
+				C73FA91C26BE7A090044F59A /* XCRemoteSwiftPackageReference "ncmb_swift" */,
+			);
 			productRefGroup = C73FA90B26BE79F50044F59A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73FA91026BE79F50044F59A /* ContentView.swift in Sources */,
+				C73FA92026BE82780044F59A /* RankingView.swift in Sources */,
 				C73FA90E26BE79F50044F59A /* RankingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C73FA91C26BE7A090044F59A /* XCRemoteSwiftPackageReference "ncmb_swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NIFCLOUD-mbaas/ncmb_swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C73FA91D26BE7A090044F59A /* NCMB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C73FA91C26BE7A090044F59A /* XCRemoteSwiftPackageReference "ncmb_swift" */;
+			productName = NCMB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C73FA90226BE79F50044F59A /* Project object */;
 }
