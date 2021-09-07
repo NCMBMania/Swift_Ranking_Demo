@@ -44,9 +44,6 @@ struct ContentView: View {
                 Button("リセット", action: reset)
                     .disabled(enabled)
             }
-            Button("ランキングを見る", action: {
-                showRanking = true
-            })
             if count > 0 && limit == 0{
                 VStack {
                     HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: nil, content: {
